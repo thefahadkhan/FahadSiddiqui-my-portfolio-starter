@@ -16,7 +16,8 @@
         margin: 0 auto;
     }
     #skill .skill__container .skill__content {
-        padding: 1rem;
+        row-gap: 1rem;
+        column-gap: 0;
     }
 }
 
