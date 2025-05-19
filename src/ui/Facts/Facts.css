@@ -1,0 +1,30 @@
+.flex__container {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex__container .title {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.flex__container .label {
+    opacity: 0.7;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width:1100px) {
+    .flex__container .title {
+        font-size: 32px;
+    }
+
+    .flex__container .label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:500px) {
+    
+}

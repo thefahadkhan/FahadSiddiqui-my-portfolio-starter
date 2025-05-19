@@ -1,0 +1,153 @@
+.service__card {
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 50px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: var(--transition);
+    background: rgba(var(--color-primary-rgb),.03);
+    box-shadow: var(--border-shadow),0 0 30px rgba(var(--color-primary-rgb),.03)
+}
+
+.service__card .service__card-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d
+}
+
+.service__card .ball {
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(var(--color-primary-rgb),.1);
+    box-shadow: rgba(var(--color-primary-rgb),.15) -10px 10px 20px;
+    transition: all .5s ease-in-out;
+    color: var(--color-white);
+    font-size: 1.5rem
+}
+
+.service__card .ball1 {
+    width: 170px;
+    transform: translateZ(20px);
+    top: 8px;
+    right: 8px
+}
+
+.service__card .ball2 {
+    width: 140px;
+    transform: translateZ(40px);
+    top: 10px;
+    right: 10px;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    transition-delay: .4s
+}
+
+.service__card .ball3 {
+    width: 110px;
+    transform: translateZ(60px);
+    top: 17px;
+    right: 17px;
+    transition-delay: .8s
+}
+
+.service__card .ball4 {
+    width: 80px;
+    transform: translateZ(80px);
+    top: 23px;
+    right: 23px;
+    transition-delay: 1.2s
+}
+
+.service__card .ball5 {
+    width: 50px;
+    transform: translateZ(100px);
+    top: 30px;
+    right: 30px;
+    transition-delay: 1.6s
+}
+
+.service__card .service__card-middle {
+    flex: 1;
+    padding: 110px 30px 30px;
+    transform: translateZ(26px);
+}
+
+.service__card .title {
+    font-weight: 600;
+    font-size: 25px
+}
+
+.service__card .description {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 20px
+}
+
+.service__card .service__card-bottom {
+    padding: 30px 30px 50px;
+    transform-style: preserve-3d;
+    transform: translateZ(26px)
+}
+
+.service__card .social__handles__container {
+    transform-style: preserve-3d;
+    gap: .5rem
+}
+
+.service__card .social__handle {
+    color: var(--color-primary);
+    background: rgba(var(--color-primary-rgb),.1);
+    box-shadow: rgba(var(--color-primary-rgb),.3) 0 7px 5px -5px
+}
+
+.service__card .social__handle:hover {
+    color: var(--color-white)
+}
+
+.service__card .social__handle:first-child {
+    transition: transform .2s ease-in-out .4s,box-shadow .2s ease-in-out .4s
+}
+
+.service__card .social__handle:nth-child(2) {
+    transition: transform .2s ease-in-out .6s,box-shadow .2s ease-in-out .6s
+}
+
+.service__card .social__handle:nth-child(3) {
+    transition: transform .2s ease-in-out .8s,box-shadow .2s ease-in-out .8s
+}
+
+.service__card .social__handle:nth-child(4) {
+    transition: transform .2s ease-in-out .8s,box-shadow .2s ease-in-out 1s
+}
+
+.service__card:hover {
+    transform: rotate3d(1,1,0,30deg)
+}
+
+.service__card:hover .social__handle {
+    transform: translateZ(50px);
+    box-shadow: rgba(var(--color-primary-rgb),.2) -5px 20px 10px
+}
+
+.service__card:hover .ball2 {
+    transform: translateZ(60px)
+}
+
+.service__card:hover .ball3 {
+    transform: translateZ(80px)
+}
+
+.service__card:hover .ball4 {
+    transform: translateZ(100px)
+}
+
+.service__card:hover .ball5 {
+    transform: translateZ(120px)
+}

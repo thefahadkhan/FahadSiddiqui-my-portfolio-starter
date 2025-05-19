@@ -1,0 +1,23 @@
+#services {
+    overflow: hidden;
+}
+
+#services .service__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    #services .service__group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #services .service__group {
+        grid-template-columns: 100%;
+    }
+}
