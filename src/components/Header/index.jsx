@@ -26,9 +26,6 @@ const Header = () => {
           <div className="column">
             <HeaderTitle />
           </div>
-          <div className="column">
-            <img src={profile1} className="profile__photo" alt="" />
-          </div>
         </div>
         <div className="card grid lower">
           <CodeBlock language={"javascript"} code={code} />
